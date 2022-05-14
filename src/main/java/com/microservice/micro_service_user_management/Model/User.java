@@ -6,22 +6,20 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class User {
     @Id
     private String userId;
+    private String userName;
     private String password;
-    private String name;
-    private String role;
-    private int mobileNo;
-    private String email;
+    private String userRole;
+    private String designation;
 
     public User() {
     }
 
-    public User(String userId, String password, String name, String role, int mobileNo, String email) {
+    public User(String userId, String userName, String password,String userRole, String designation) {
         this.userId = userId;
+        this.userName = userName;
         this.password = password;
-        this.name = name;
-        this.role = role;
-        this.mobileNo = mobileNo;
-        this.email = email;
+        this.userRole = userRole;
+        this.designation = designation;
     }
 
     public String getUserId() {
@@ -32,43 +30,35 @@ public class User {
         this.userId = userId;
     }
 
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getUserRole() {
+        return userRole;
+    }
+
+    public void setUserRole(String userRole) {
+        this.userRole = userRole;
+    }
+
+    public String getDesignation() {
+        return designation;
+    }
+
+    public void setDesignation(String designation) {
+        this.designation = designation;
+    }
+
     public String getPassword() {
         return password;
     }
 
     public void setPassword(String password) {
         this.password = password;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-
-    public int getMobileNo() {
-        return mobileNo;
-    }
-
-    public void setMobileNo(int mobileNo) {
-        this.mobileNo = mobileNo;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 }
