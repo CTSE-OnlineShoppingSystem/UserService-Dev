@@ -24,7 +24,7 @@ env:
   GKE_ZONE: asia-southeast1-a   # TODO: update to cluster zone
   DEPLOYMENT_NAME: gke-test # TODO: update to deployment name
   REPOSITORY: userm-ms # TODO: update to Artifact Registry docker repository
-  IMAGE: static-site
+  IMAGE: user_management
 
 jobs:
   setup-build-publish-deploy:
