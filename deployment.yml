@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: gke-test
-        image: asia-southeast1-docker.pkg.dev/tonal-apex-350415/userm-ms/user_management@sha256:1803b9bf3c3f7eb31705de5ab503d53ad1b17579ae3e1d83b09203e44eb0e703
+        image: asia-southeast1-docker.pkg.dev/tonal-apex-350415/userm-ms/user_management:V1
         ports:
         - containerPort: 8080
         resources:
